@@ -1,0 +1,5 @@
+addCoinA:
+    type: branch
+    link: false
+    addr: 0x00586c6c
+    func: addCoinHook(GameWork*, int)

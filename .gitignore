@@ -1,0 +1,9 @@
+bak/
+build/
+*.elf
+*.bin
+*.sym
+compile_commands.json
+.vscode/
+.cache/
+newcodeinfo.h

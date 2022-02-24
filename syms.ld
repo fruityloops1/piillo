@@ -1,0 +1,10 @@
+_ZN8GameWork7addItemEta = 0x11317c;
+_ZN8GameWork7addCoinEi = 0x586c6c;
+_ZNK8GameWork10getItemNumEt = 0x5f0dbc;
+_ZN8GameWork10equipBadgeEht = 0x586518;
+_ZN8GameWork9equipItemEhth = 0x586f70;
+_ZNK8GameWork10isHardModeEv = 0x5f0e0c;
+_ZN8GameWork11getPlayTimeEPsS0_S0_S0_ = 0x5865a0;
+_ZN8GameWork14updatePlayTimeEv = 0x109a0c;
+_ZNK8GameWork13getRealAreaNoEv = 0x5f0e8c;
+_ZN9MBootInfo10setDefaultEv = 0x59ffb4;
