@@ -2,7 +2,7 @@
 
 Pi'illo is a base project for custom code in the EU v1.1 version of Mario & Luigi: Dream Team (Bros.)
 
-Currently, the example will set your coin count to 69420 when you collect a coin.
+Currently, the example will log the coin count (with svcOutputDebugString) when coins are added.
 
 ## Using
 
