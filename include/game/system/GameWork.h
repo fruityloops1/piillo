@@ -5,7 +5,7 @@
 class GameWork {
 public:
     int addItem(u16 type, s8 amount);
-    int addCoin(s32 amount);
+    int addCoin(int amount);
 
     int getItemNum(u16 type) const;
     u8 getRealAreaNo() const;
@@ -20,3 +20,5 @@ public:
     sfill(0x91c, unk);
     int mCoinCount;
 };
+
+extern GameWork gGameWork;
