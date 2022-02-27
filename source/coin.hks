@@ -1,5 +1,20 @@
 addCoinA:
     type: branch
-    link: false
-    addr: 0x00586c6c
+    link: true
+    addr: 0x001ebce0
+    func: addCoinHook(GameWork*, int)
+addCoinB:
+    type: branch
+    link: true
+    addr: 0x001f2978
+    func: addCoinHook(GameWork*, int)
+addCoinC:
+    type: branch
+    link: true
+    addr: 0x001f5bf4
+    func: addCoinHook(GameWork*, int)
+addCoinD:
+    type: branch
+    link: true
+    addr: 0x00548644
     func: addCoinHook(GameWork*, int)
