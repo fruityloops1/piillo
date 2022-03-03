@@ -20,5 +20,7 @@ atoi = 0x1007cd;
 memset = 0x143bdc;
 strncpy = 0x143bf8;
 
+__addrMain = 0x0;
+
 gGameWork = 0x6e7cd0;
 gMem = 0x6ed9b8;

@@ -1,9 +1,9 @@
 #pragma once
 
-#include "game/system/GameWork.h"
 #include <stdint.h>
 
-#define MAIN_ADDR (((uintptr_t)&gGameWork) - 0x6e7cd0)
+extern void* __addrMain;
+#define MAIN_ADDR ((uintptr_t)&__addrMain)
 
 #define ARGS(...) __VA_ARGS__
 #define EFUN(ADDR, RET, NAME, ARGS) \
