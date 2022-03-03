@@ -1,0 +1,36 @@
+equipItemA:
+    type: branch
+    link: true
+    addr: 0x005ebc20
+    func: equipItemHook(GameWork*, unsigned char, unsigned short, unsigned char)
+
+addItemA:
+    type: branch
+    link: true
+    addr: 0x00109888
+    func: addItemHook(GameWork*, unsigned short, signed char)
+addItemB:
+    type: branch
+    link: true
+    addr: 0x001098e8
+    func: addItemHook(GameWork*, unsigned short, signed char)
+addItemC:
+    type: branch
+    link: true
+    addr: 0x001099d8
+    func: addItemHook(GameWork*, unsigned short, signed char)
+addItemD:
+    type: branch
+    link: true
+    addr: 0x001ebd60
+    func: addItemHook(GameWork*, unsigned short, signed char)
+addItemE:
+    type: branch
+    link: true
+    addr: 0x001f2960
+    func: addItemHook(GameWork*, unsigned short, signed char)
+addItemF:
+    type: branch
+    link: true
+    addr: 0x001f5d6c
+    func: addItemHook(GameWork*, unsigned short, signed char)
