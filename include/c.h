@@ -1,8 +1,8 @@
 #pragma once
 
 #include "piillo/efun.h"
-#include <cstdarg>
-#include <cstring>
+#include <stdarg.h>
+#include <string.h>
 
 // for standard functions with weird names (and standard thumb functions)
 

@@ -7,8 +7,7 @@ extern "C" {
 #include <3ds/svc.h>
 }
 
-#include <cstdarg>
-#include <cstdio>
+#include <stdio.h>
 
 namespace piillo {
 
@@ -19,11 +18,17 @@ inline void debugLog(const char* format, ...)
 
     s32 size = __c89vsnprintf(nullptr, 0, format, args);
     char buf[size + 1];
+    /*
+     * Can be done on the heap too:
+     * char* buf = (char*)gMem.allocCore(size + 1, 4);
+     */
     __c89vsnprintf(buf, size + 1, format, args);
 
     va_end(args);
 
     svcOutputDebugString(buf, size);
+
+    // gMem.free(buf);
 }
 
 } // namespace piilo

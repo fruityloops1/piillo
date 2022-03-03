@@ -9,6 +9,9 @@ _ZN8GameWork14updatePlayTimeEv = 0x109a0c;
 _ZNK8GameWork13getRealAreaNoEv = 0x5f0e8c;
 _ZN9MBootInfo10setDefaultEv = 0x59ffb4;
 
+_ZN6MemAlc4freeEPv = 0x50f7f8;
+_ZN6MemAlc9allocCoreEjj = 0x50fae0;
+
 strlen = 0x300174;
 strcmp = 0x3000b8;
 memcmp = 0x1004fd;
@@ -18,3 +21,4 @@ memset = 0x143bdc;
 strncpy = 0x143bf8;
 
 gGameWork = 0x6e7cd0;
+gMem = 0x6ed9b8;
