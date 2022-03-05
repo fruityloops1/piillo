@@ -1,13 +1,10 @@
 #pragma once
 
 #include "c.h"
-#include "types.h"
 
 extern "C" {
 #include <3ds/svc.h>
 }
-
-#include <stdio.h>
 
 namespace piillo {
 
