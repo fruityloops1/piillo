@@ -1,0 +1,8 @@
+001ebce0:
+    bl addCoinHook(GameWork*, int)
+001f2978:
+    bl addCoinHook(GameWork*, int)
+001f5bf4:
+    bl addCoinHook(GameWork*, int)
+00548644:
+    bl addCoinHook(GameWork*, int)
