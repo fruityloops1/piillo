@@ -1,10 +1,7 @@
 #pragma once
 
 #include "c.h"
-
-extern "C" {
-#include <3ds/svc.h>
-}
+#include "svc.h"
 
 namespace piillo {
 
@@ -23,7 +20,7 @@ inline void debugLog(const char* format, ...)
 
     va_end(args);
 
-    svcOutputDebugString(buf, size);
+    svc::OutputDebugString(buf, size);
 
     // gMem.free(buf);
 }
