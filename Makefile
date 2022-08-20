@@ -43,7 +43,7 @@ INCLUDES	:=	include
 ARCH	:=	-march=armv6k -mtune=mpcore -mfloat-abi=hard -mtp=soft -mfpu=vfpv2
 
 CFLAGS	:=	-g -Wall -O2 -mword-relocations \
-			-fomit-frame-pointer -ffunction-sections \
+			-fomit-frame-pointer -ffunction-sections -fshort-wchar \
 			$(ARCH)
 
 CFLAGS	+=	$(INCLUDE) -DARM11 -D_3DS
@@ -51,9 +51,9 @@ CFLAGS	+=	$(INCLUDE) -DARM11 -D_3DS
 CXXFLAGS	:= $(CFLAGS) -fno-exceptions -std=gnu++20
 
 ASFLAGS	:=	-g $(ARCH)
-LDFLAGS	=	-T $(LINKERSCRIPT) -T $(SYMBOLSCRIPT) -g $(ARCH) -Wl,-Map,$(notdir $*.map)
+LDFLAGS	=	-T $(LINKERSCRIPT) -T $(SYMBOLSCRIPT) -g $(ARCH) -nostartfiles -nolibc -nodefaultlibs -Wl,--rpath="$(CURDIR)/../lib/" -Wl,--no-demangle -Wl,-Map,$(notdir $*.map)
 
-LIBS	:= -lctru -lm
+LIBS	:= "$(DEVKITARM)/arm-none-eabi/lib/armv6k/fpu/libc.a" "$(DEVKITARM)/arm-none-eabi/lib/armv6k/fpu/libm.a" "$(DEVKITARM)/arm-none-eabi/lib/armv6k/fpu/libsysbase.a" -L "$(CURDIR)/../lib/"
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing
