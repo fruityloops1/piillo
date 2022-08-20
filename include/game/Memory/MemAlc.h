@@ -1,6 +1,6 @@
 #pragma once
 
-#include "sl/mem/MemAlcBase.h"
+#include "game/Memory/MemAlcBase.h"
 
 class MemAlc : public MemAlcBase {
 public:
