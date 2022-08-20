@@ -1,4 +1,4 @@
-#include "game/battle/MonsterData.h"
+#include "game/Battle/MonsterData.h"
 #include "piillo/log.h"
 
 constexpr BattleMonsterEntry sMonsterEntries[] = {
