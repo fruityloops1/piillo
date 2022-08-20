@@ -1,0 +1,10 @@
+/* nn/gxlow/CTR/*.h */
+
+__sys_setDMACommandRequest = 0x00609c60;
+nngxlowFlushDataCache = 0x00128f08;
+nngxlowGetPhysicalAddr = 0x001290d8;
+nngxlowInitialize = 0x0011b6d0;
+nngxlowLock = 0x0011b950;
+nngxlowReadHWRegs = 0x0011b7d8;
+nngxlowUnlock = 0x0011b960;
+nngxlowYieldThread = 0x0011b830;
